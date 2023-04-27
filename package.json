@@ -1,12 +1,32 @@
 {
   "name": "remark-hatena-id",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "remark plugin to hatena id notation",
+  "main": "index.ts",
+  "author": "cateiru <yuto.w51942@gmail.com>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "build": "pnpm clean && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cateiru/remark-hatena-id"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/mdast": "^3.0.11",
+    "mdast": "^3.0.0",
+    "remark": "^14.0.2",
+    "rimraf": "^5.0.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4",
+    "unified": "^10.1.2",
+    "unist-util-visit": "^4.1.2"
+  }
 }
