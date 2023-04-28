@@ -21,21 +21,21 @@ describe("no options", () => {
   test("default", async () => {
     const md = "id:hatena";
     expect(await process(md)).toBe(
-      `<p><a href="https://profile.hatena.ne.jp/hatena">id:hatena</a></p>`
+      `<p><a href="https://profile.hatena.ne.jp/hatena/">id:hatena</a></p>`
     );
   });
 
   test("multiple", async () => {
     const md = `aaa id:hatena, id:hatena2 end`;
     expect(await process(md)).toBe(
-      `<p>aaa <a href="https://profile.hatena.ne.jp/hatena">id:hatena</a>, <a href="https://profile.hatena.ne.jp/hatena2">id:hatena2</a> end</p>`
+      `<p>aaa <a href="https://profile.hatena.ne.jp/hatena/">id:hatena</a>, <a href="https://profile.hatena.ne.jp/hatena2/">id:hatena2</a> end</p>`
     );
   });
 
   test("with text", async () => {
     const md = `Hello id:hatena goodbye`;
     expect(await process(md)).toBe(
-      `<p>Hello <a href="https://profile.hatena.ne.jp/hatena">id:hatena</a> goodbye</p>`
+      `<p>Hello <a href="https://profile.hatena.ne.jp/hatena/">id:hatena</a> goodbye</p>`
     );
   });
 
@@ -45,8 +45,8 @@ describe("no options", () => {
 id:hatena2 hello`;
 
     expect(await process(md))
-      .toBe(`<p><a href="https://profile.hatena.ne.jp/hatena">id:hatena</a></p>
-<p><a href="https://profile.hatena.ne.jp/hatena2">id:hatena2</a> hello</p>`);
+      .toBe(`<p><a href="https://profile.hatena.ne.jp/hatena/">id:hatena</a></p>
+<p><a href="https://profile.hatena.ne.jp/hatena2/">id:hatena2</a> hello</p>`);
   });
 });
 
@@ -55,7 +55,7 @@ describe("detail", () => {
     const md = "id:hatena:detail";
 
     expect(await process(md)).toBe(
-      `<p><a href="https://profile.hatena.ne.jp/hatena" class="hatena-id-icon"><img src="https://cdn.profile-image.st-hatena.com/users/hatena/profile.png" width="16" height="16" class="hatena-id-icon">id:hatena</a></p>`
+      `<p><a href="https://profile.hatena.ne.jp/hatena/" class="hatena-id-icon"><img src="https://cdn.profile-image.st-hatena.com/users/hatena/profile.png" width="16" height="16" class="hatena-id-icon">id:hatena</a></p>`
     );
   });
 });
@@ -65,7 +65,7 @@ describe("detail:large", () => {
     const md = "id:hatena:detail:large";
 
     expect(await process(md)).toBe(
-      `<p><a href="https://profile.hatena.ne.jp/hatena" class="hatena-id-icon"><img src="https://cdn.profile-image.st-hatena.com/users/hatena/profile.png" width="60" height="60" class="hatena-id-icon">id:hatena</a></p>`
+      `<p><a href="https://profile.hatena.ne.jp/hatena/" class="hatena-id-icon"><img src="https://cdn.profile-image.st-hatena.com/users/hatena/profile.png" width="60" height="60" class="hatena-id-icon">id:hatena</a></p>`
     );
   });
 });
@@ -75,7 +75,7 @@ describe("image", () => {
     const md = "id:hatena:image";
 
     expect(await process(md)).toBe(
-      `<p><a href="https://profile.hatena.ne.jp/hatena" class="hatena-id-image"><img src="https://cdn.profile-image.st-hatena.com/users/hatena/profile.png" width="60" height="60" class="hatena-id-image"></a></p>`
+      `<p><a href="https://profile.hatena.ne.jp/hatena/" class="hatena-id-image"><img src="https://cdn.profile-image.st-hatena.com/users/hatena/profile.png" width="60" height="60" class="hatena-id-image"></a></p>`
     );
   });
 });

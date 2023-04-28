@@ -68,7 +68,7 @@ const hatenaIdNode = (
     data: {
       hName: "a",
       hProperties: {
-        href: `https://profile.hatena.ne.jp/${hatenaId}`,
+        href: `https://profile.hatena.ne.jp/${hatenaId}/`,
         class: className,
       },
     },
