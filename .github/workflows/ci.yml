@@ -16,7 +16,7 @@ jobs:
         with:
           version: latest
       - name: Install Deps
-        run: pnpm i
+        run: pnpm install --frozen-lockfile
       - name: Build package
         run: pnpm build
       - name: Run test
