@@ -1,7 +1,7 @@
 {
   "name": "remark-hatena-id",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist",
@@ -9,7 +9,7 @@
   ],
   "main": "./dist/counter.umd.cjs",
   "module": "./dist/counter.js",
-  "types": "./index.d.ts",
+  "types": "./dist/main.d.ts",
   "exports": {
     "types": "./index.d.ts",
     "import": "./dist/counter.js",
@@ -17,10 +17,22 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "test": "vitest"
   },
   "devDependencies": {
+    "@types/mdast": "^3.0.11",
+    "mdast": "^3.0.0",
+    "rehype-stringify": "^9.0.3",
+    "remark": "^14.0.2",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
     "typescript": "^4.9.4",
-    "vite": "^4.0.4"
+    "unified": "^10.1.2",
+    "unist-builder": "^3.0.1",
+    "unist-util-visit": "^4.1.2",
+    "vite": "^4.0.4",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.30.1"
   }
 }
