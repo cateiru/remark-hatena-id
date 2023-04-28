@@ -48,6 +48,14 @@ id:hatena2 hello`;
       .toBe(`<p><a href="https://profile.hatena.ne.jp/hatena/">id:hatena</a></p>
 <p><a href="https://profile.hatena.ne.jp/hatena2/">id:hatena2</a> hello</p>`);
   });
+
+  test("code block", async () => {
+    const md = "hello id:hatena `id:hatena`";
+
+    expect(await process(md)).toBe(
+      `<p>hello <a href="https://profile.hatena.ne.jp/hatena/">id:hatena</a> <code>id:hatena</code></p>`
+    );
+  });
 });
 
 describe("detail", () => {
