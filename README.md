@@ -1,5 +1,7 @@
 # remark-hatena-id
 
+[![npm version](https://badge.fury.io/js/remark-hatena-id.svg)](https://badge.fury.io/js/remark-hatena-id) [![CI](https://github.com/cateiru/remark-hatena-id/actions/workflows/ci.yml/badge.svg)](https://github.com/cateiru/remark-hatena-id/actions/workflows/ci.yml)
+
 This package is a [unified](https://github.com/unifiedjs/unified) ([remark](https://github.com/remarkjs/remark)) plugin to add Hatena's id notation.
 
 ## What is id notation?
