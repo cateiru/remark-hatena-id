@@ -25,7 +25,7 @@
   ],
   "main": "./dist/counter.umd.cjs",
   "module": "./dist/counter.js",
-  "types": "./dist/main.d.ts",
+  "types": "./dist/lib/main.d.ts",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cateiru/remark-hatena-id/issues"
