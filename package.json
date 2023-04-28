@@ -1,15 +1,35 @@
 {
   "name": "remark-hatena-id",
   "private": false,
+  "author": {
+    "name": "cateiru",
+    "email": "yuto.w51942@gmail.com"
+  },
+  "description": "Hatena's id notation plugin for Remark",
   "version": "1.0.0",
   "type": "module",
   "files": [
     "dist",
     "index.d.ts"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cateiru/remark-hatena-id.git"
+  },
+  "keywords": [
+    "markdown",
+    "hatena",
+    "hatenaId",
+    "remark",
+    "plugin"
+  ],
   "main": "./dist/counter.umd.cjs",
   "module": "./dist/counter.js",
   "types": "./dist/main.d.ts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cateiru/remark-hatena-id/issues"
+  },
   "exports": {
     "types": "./index.d.ts",
     "import": "./dist/counter.js",
@@ -20,6 +40,10 @@
     "build": "tsc && vite build",
     "test": "vitest"
   },
+  "dependencies": {
+    "unist-builder": "^3.0.1",
+    "unist-util-visit": "^4.1.2"
+  },
   "devDependencies": {
     "@types/mdast": "^3.0.11",
     "mdast": "^3.0.0",
@@ -29,8 +53,6 @@
     "remark-rehype": "^10.1.0",
     "typescript": "^4.9.4",
     "unified": "^10.1.2",
-    "unist-builder": "^3.0.1",
-    "unist-util-visit": "^4.1.2",
     "vite": "^4.0.4",
     "vite-plugin-dts": "^2.3.0",
     "vitest": "^0.30.1"
