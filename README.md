@@ -64,7 +64,7 @@ Running the script should return the following results.
 
 ```html
 <h1>Title</h1>
-<p>Hello <a href="https://profile.hatena.ne.jp/hatena/">id:hatena</a> !</p>
+<p>Hello <a href="https://profile.hatena.ne.jp/hatena/" data-hatena-id="hatena">id:hatena</a> !</p>
 ```
 
 ## LICENSE

@@ -6,7 +6,7 @@
     "email": "yuto.w51942@gmail.com"
   },
   "description": "Hatena's id notation plugin for Remark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist",
