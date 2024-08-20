@@ -70,6 +70,7 @@ const hatenaIdNode = (
       hProperties: {
         href: `https://profile.hatena.ne.jp/${hatenaId}/`,
         class: className,
+        dataHatenaId: hatenaId,
       },
     },
   };
