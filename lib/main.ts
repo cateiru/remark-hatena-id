@@ -4,7 +4,7 @@ import { visit, type Visitor, VisitorResult } from "unist-util-visit";
 import { u } from "unist-builder";
 
 export const HATENA_ID_REGEX =
-  /id:(?<hatenaId>[a-zA-Z0-9\-\_]+)(:(?<option>detail:large|detail|image))?/;
+  /id:(?<hatenaId>[A-Za-z][0-9A-Za-z_-]{1,30}[0-9A-Za-z])(:(?<option>detail:large|detail|image))?/;
 export const HATENA_ID_REGEX_GLOBAL = new RegExp(HATENA_ID_REGEX, "g");
 
 const hatenaIdNode = (
