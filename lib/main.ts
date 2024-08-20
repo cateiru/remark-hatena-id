@@ -84,7 +84,7 @@ export const remarkHatenaId: Plugin<[], Root> = () => {
     }
     if (!HATENA_ID_REGEX.test(node.value)) return;
     if (!parent) return;
-    if (index === null) return;
+    if (index == null) return;
 
     const match = [...node.value.matchAll(HATENA_ID_REGEX_GLOBAL)];
 
