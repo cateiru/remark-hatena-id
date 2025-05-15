@@ -5,8 +5,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./lib/main.ts",
-      name: "Counter",
-      fileName: "counter",
+      name: "remark-hatena-id",
+      fileName: "remarkHatenaId",
     },
   },
   plugins: [dts()],

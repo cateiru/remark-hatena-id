@@ -9,8 +9,7 @@
   "version": "1.0.2",
   "type": "module",
   "files": [
-    "dist",
-    "index.d.ts"
+    "dist"
   ],
   "repository": {
     "type": "git",
@@ -23,17 +22,17 @@
     "remark",
     "plugin"
   ],
-  "main": "./dist/counter.umd.cjs",
-  "module": "./dist/counter.js",
+  "main": "./dist/remarkHatenaId.umd.cjs",
+  "module": "./dist/remarkHatenaId.js",
   "types": "./dist/lib/main.d.ts",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cateiru/remark-hatena-id/issues"
   },
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./dist/counter.js",
-    "require": "./dist/counter.umd.cjs"
+    "types": "./dist/lib/main.d.ts",
+    "import": "./dist/remarkHatenaId.js",
+    "require": "./dist/remarkHatenaId.umd.cjs"
   },
   "scripts": {
     "dev": "vite",
