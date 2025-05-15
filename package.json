@@ -45,8 +45,8 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@types/mdast": "^4.0.4",
     "mdast": "^3.0.0",
+    "@types/mdast": "^4.0.4",
     "rehype-stringify": "^10.0.1",
     "remark": "^15.0.1",
     "remark-parse": "^11.0.0",
